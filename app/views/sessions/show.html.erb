@@ -1,0 +1,6 @@
+<h1>User show</h1>
+<%if !@user.nil?%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'Sign Out',session_path(@user.id),method: :delete %><br/>
+User Name : <%= @user.name %><br/>
+Log In provider : <%= @user.provider %>
+<%end%>
